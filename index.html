@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sujal kishore kumar talreja - Web developer </title>
+        <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/Sujaltalreja04/Edited-web/main/Screenshot%202023-11-29%20001357.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" media="screen and (max-width: 821px)" href="responsive.css">
+        <style>
+            .photo-container {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                animation: floatAnimation 2s infinite alternate; /* Adjust animation duration and timing as needed */
+            }
+    
+            @keyframes floatAnimation {
+                0% {
+                    transform: translateY(0);
+                }
+                100% {
+                    transform: translateY(-10px); /* Adjust the floating distance */
+                }
+            }
+        </style>
+    </head>
+    
+<body>
+
+    <!-- Navbar Section -->
+    <nav id="navbar" class="flex s-around bg-color">
+        <div class="left-nav">
+            <h2 class="t-white">Sujal kishore kumar talreja</h2>
+        </div>
+        <div class="right-nav">
+            <ul class="flex">
+                <li><a href="#home" class="t-white roboto">Home</a></li>
+                <li><a href="#about" class="t-white roboto">About Me</a></li>
+                <li><a href="#skills" class="t-white roboto">Skills</a></li>
+                <li><a href="#services" class="t-white roboto">services</a></li>
+                <li><a href="#projects" class="t-white roboto">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Bottom Navigator -->
+    <section id="bottom">
+        <div class="bottom-nav flex s-center items-center">
+            <ul class="flex s-around items-center">
+                <a href="#home">
+                    <li class="bottomo-hover flex s-center items-center"><i class="fa-solid fa-house"></i></li>
+                </a>
+                <a href="#about">
+                    <li class="bottomo-hover flex s-center items-center"><i class="fa-solid fa-user"></i></li>
+                </a>
+                <a href="#skills">
+                    <li class="bottomo-hover flex s-center items-center"><i class="fa-solid fa-code"></i></li>
+                </a>
+                <a href="#services">
+                    <li class="bottomo-hover flex s-center items-center">
+                        <i class="fa-solid fa-rocket"></i>
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Home Section -->
+    <section id="home" class="flex s-around sw-80 m-auto">
+        <div class="home-left flex items-center">
+            <div class="home-content">
+                <h6 class="poppinss">Hi, I'm</h6>
+                <h1 class="t-white">Sujal kishore kumar talreja</h1>
+                <h4 class="poppinss"> Web Developer</h4>
+                <a href="https://drive.google.com/file/d/1Uiyt5oOFBJX-ghSIFt2BirHxDi1rHuPt/view?usp=sharing" download target="_blank">
+                    <button class="btn poppins">Resume</button>
+                </a>
+                
+                <a class="btn live poppins" id="hireme" href="https://www.linkedin.com/in/sujal-kishore-kumar-talreja-65975b216/" target="_blank">Let's Talk</a>
+
+            </div>
+        </div>
+        <div class="home-right flex s-center items-center">
+            <div class="circle flex s-center items-center" id="mainImage">
+                <!-- Here in src replace the given link with your image link -->
+                <img src="https://raw.githubusercontent.com/Sujaltalreja04/Edited-web/main/Screenshot%202023-11-29%20001357.png" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h1 class="t-center my-2 t-white f-2">About Me</h1>
+        <div class="about-container flex s-around ">
+            <div class=" about-left flex s-center items-center">
+                <!-- Here in src replade the given link with your secondary image link -->
+                <img src="data:image/jpeg;base64,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" alt="" style="width: 50%;">
+            </div>
+
+            <div class="about-right flex">
+                <div class="about-content">
+                    <h1 class="t-white m-b-1 poppins">Sujal kishore kumar talreja</h1>
+                    <p class="t-white poppins">A self-tought  Web Developer <b>BSCIT from Ganpat University</b> student looking for
+                        an opportunity in Web Development. <br>
+                        Who is committed to study web development. Mindset to fullfill the life with
+                        wonderful memories and knowledge.Currently pursuing bscit from ganpat university aim to became succesful web developer or Cyber security expert visit my github and linkedin account for update of latest achievement and projects.</p>
+                    <a class="btn live poppins" id="hireme"
+                        href="https://www.linkedin.com/in/sujal-kishore-kumar-talreja-65975b216/">Hire Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h1 class="t-center my-2 t-white f-2">Skills</h1>
+        <div class="services-container flex s-around h-50"">
+        <div class=" skills-left flex s-center items-center">
+            <img src="https://github.com/webcoder904/SUJAL-STICK-GAME/blob/main/skills.png?raw=true" alt="">
+        </div>
+
+        <div class="skills-right flex items-center">
+            <div class="skillss-container">
+                <div class="html bar p-relative"><span class="bar-content left t-white">HTML</span><span
+                        class="bar-content right-skills t-white">100%</span></div>
+                <div class="css bar p-relative"><span class="bar-content left t-white">CSS</span><span
+                        class="bar-content right-skills t-white">80%</span></div>
+                <div class="js bar p-relative"><span class="bar-content left t-white">JavaScript</span><span
+                        class="bar-content right-skills t-white">75%</span></div>
+                <div class="bootstrap bar p-relative"><span class="bar-content left t-white">Seo</span><span
+                        class="bar-content right-skills t-white">50%</span></div>
+                        <div class="css bar p-relative"><span class="bar-content left t-white">English communication</span><span
+                            class="bar-content right-skills t-white">80%</span></div>
+                        
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h1 class=" t-center my-2 t-white f-2">Services</h1>
+        <div class="services-container flex s-center">
+            <div class="test-item flex f-col items-center">
+                <img src="https://github.com/webcoder904/SUJAL-STICK-GAME/blob/main/developer.png?raw=true" alt="">
+                <h1 class="t-white poppins">Web Development</h1>
+                <p class="t-white poppins">Web Development is envolving everywhere. Every startup and every bussines
+                    have their own websites. As my passion I will help you to build your clean and fast website for your
+                    startup or your bussines.</p>
+            </div>
+            <div class="test-item flex f-col items-center">
+                <img src="https://github.com/webcoder904/SUJAL-STICK-GAME/blob/main/social-media-management.png?raw=true" alt="">
+                <h1 class="t-white poppins">Social Media Management</h1>
+                <p class="t-white poppins">Social Media is the power of future. So I'll help in developing brand
+                    awareness thow managing your social media handles and will to increase customer loyalty.</p>
+            </div>
+            <div class="test-item flex f-col items-center">
+                <img src="https://github.com/webcoder904/SUJAL-STICK-GAME/blob/main/startup.png?raw=true" alt="">
+                <h1 class="t-white poppins">Growth Strategies</h1>
+                <p class="t-white poppins">As a web developer also I will help your brand to grow up . I will provide
+                    the growth strategies for your brand. And also help in searching techniques for your brand.</p>
+            </div>
+
+        </div>
+    </section>
+
+   <!-- Projects Section -->
+<section id="projects">
+    <h1 class="t-center my-2 t-white f-2">Projects</h1>
+    <div class="projects-container flex scroll-top">
+        <div class="projects-item flex f-col s-center items-center">
+            <div class="image-container p-three">
+                <img src="https://github.com/webcoder904/Speech-recognition/blob/main/resize%20speech%20regonition.png?raw=true" alt="">
+            </div>
+            <h1 class="t-white poppins">Speech Recognition</h1>
+            <p class="t-white poppins">This is a speech recognition website where website can convert your speech into text</p>
+            <div class="buttons flex s-around">
+                <a href="https://github.com/webcoder904/Speech-recognition" target="_blank" class="btn mx-1 m-top">GitHub</a>
+                <a href="https://github.com/webcoder904/Speech-recognition" target="_blank" class="btn m-top live">Live Link</a>
+            </div>
+        </div>
+
+        <div class="projects-item flex f-col s-center items-center">
+            <div class="image-container p-one">
+                <img src="https://github.com/webcoder904/SUJAL-STICK-GAME/blob/main/resize.png?raw=true" alt="">
+            </div>
+            <h1 class="t-white poppins">Sujal Stick game</h1>
+            <p class="t-white poppins">Create a captivating game where players have to pass obstacles using a black stick.</p>
+            <div class="buttons flex s-around">
+                <a href="https://github.com/webcoder904/SUJAL-STICK-GAME" target="_blank" class="btn mx-1 m-top">GitHub</a>
+                <a href="https://webcoder904.github.io/SUJAL-STICK-GAME/" target="_blank" class="btn m-top live">Live Link</a>
+            </div>
+        </div>
+
+        <div class="projects-item flex f-col s-center items-center">
+            <div class="image-container p-one">
+                <img src="https://github.com/webcoder904/Updated-translators/blob/main/resize%20translator.png?raw=true" alt="">
+            </div>
+            <h1 class="t-white poppins">Translator</h1>
+            <p class="t-white poppins">Create a captivating game where players have to pass obstacles using a black stick.</p>
+            <div class="buttons flex s-around">
+                <a href="https://github.com/webcoder904/Updated-translators" target="_blank" class="btn mx-1 m-top">GitHub</a>
+                <a href="https://webcoder904.github.io/Updated-translators/" target="_blank" class="btn m-top live">Live Link</a>
+            </div>
+        </div>
+
+        <div class="projects-item flex f-col s-center items-center">
+            <div class="image-container p-one">
+                <img src="https://github.com/webcoder904/Sujal-menja/blob/main/menja%20resize.png?raw=true" alt="">
+            </div>
+            <h1 class="t-white poppins">Sujal Menja</h1>
+            <p class="t-white poppins">A simple smashing game where players have to smash popping 3D cubes with the help of the cursor.</p>
+            <div class="buttons flex s-around">
+                <a href="https://github.com/webcoder904/Sujal-menja/tree/main" target="_blank" class="btn mx-1 m-top">GitHub</a>
+                <a href="https://webcoder904.github.io/Sujal-menja/" target="_blank" class="btn m-top live">Live Link</a>
+            </div>
+        </div>
+
+        <div class="projects-item flex f-col s-center items-center">
+            <div class="image-container p-two">
+                <img src="https://github.com/webcoder904/Crossy-road/blob/main/resize%20crossy%20road.png?raw=true" alt="">
+            </div>
+            <h1 class="t-white poppins">Crossy road game</h1>
+            <p class="t-white poppins">Crossy road game in which players have to pass road obstacles to finish the game</p>
+            <div class="buttons flex s-around">
+                <a href="https://github.com/webcoder904/Crossy-road" target="_blank" class="btn mx-1 m-top">GitHub</a>
+                <a href="https://webcoder904.github.io/Crossy-road/" target="_blank" class="btn m-top live">Live Link</a>
+            </div>
+        </div>
+
+        <div class="projects-item flex f-col s-center items-center">
+            <div class="image-container p-two">
+                <img src="https://github.com/webcoder904/Chatbot-2/blob/main/chatbot%20resize.png?raw=true" alt="">
+            </div>
+            <h1 class="t-white poppins">Bharat theme chatbot</h1>
+            <p class="t-white poppins">Personalized chatbot made on Bharat theme. This chatbot displays my introduction theme</p>
+            <div class="buttons flex s-around">
+                <a href="https://github.com/webcoder904/Chatbot-2" target="_blank" class="btn mx-1 m-top">GitHub</a>
+                <a href="https://webcoder904.github.io//Chatbot-2/" target="_blank" class="btn m-top live">Live Link</a>
+            </div>
+        </div>
+
+        <div class="projects-item flex f-col s-center items-center">
+            <div class="image-container p-one">
+                <img src="https://github.com/webcoder904/Mole-Game/blob/main/resize%20mole%20game.png?raw=true" alt="">
+            </div>
+            <h1 class="t-white poppins">Whack a mole game</h1>
+            <p class="t-white poppins">Created childhood mole beating game.</p>
+            <div class="buttons flex s-around">
+                <a href="https://github.com/webcoder904/Mole-Game" target="_blank" class="btn mx-1 m-top">GitHub</a>
+                <a href="https://webcoder904.github.io/Mole-Game/" target="_blank" class="btn m-top live">Live Link</a>
+            </div>
+        </div>
+
+        <div class="projects-item flex f-col s-center items-center">
+            <div class="image-container p-three">
+                <img src="https://github.com/webcoder904/Advance-wheather-app/blob/main/resize%20weather%20app.png?raw=true" alt="">
+            </div>
+            <h1 class="t-white poppins">Advance weather app</h1>
+            <p class="t-white poppins">Through this app, you can get the exact weather details of any place</p>
+            <div class="buttons flex s-around">
+                <a href="https://github.com/webcoder904/Advance-wheather-app" target="_blank" class="btn mx-1 m-top">GitHub</a>
+                <a href="https://webcoder904.github.io/Advance-wheather-app/" target="_blank" class="btn m-top live">Live Link</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Me Section -->
+<section id="contact" class="m-b-1">
+    <h1 class="t-center my-2 t-white f-2">Contact Me</h1>
+    <div class="contact-container flex s-around items-center">
+        <div class="form" id="contactForm">
+            <form action="https://formspree.io/f/xeqyvjnk" method="POST" class="flex f-col s-center items-center">
+                <div class="name form-div">
+                    <input type="text" name="name" id="name" class="poppins" placeholder="Enter Your Name">
+                </div>
+                <div class="email form-div">
+                    <input type="email" name="email" id="email" class="poppins" placeholder="Enter Your Email" required>
+                </div>
+                <div class="phone form-div">
+                    <input type="phone" name="phone" id="phone" class="poppins" placeholder="Enter Your Phone" required>
+                </div>
+                <div class="textarea form-div">
+                    <textarea name="text" id="textarea" cols="30" rows="10" class="poppins" placeholder="Enter Messages"></textarea>
+                </div>
+                <button type="submit" class="btn poppins" id="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+    
+    
+    
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <ul class="flex s-center w-80 m-auto my-2 res">
+            <li><a href="#home" class="poppinss">Home</a></li>
+            <li><a href="#about" class="poppinss">About</a></li>
+            <li><a href="#skills" class="poppinss">Skills</a></li>
+            <li><a href="#projects" class="poppinss">Projects</a></li>
+            <li><a href="#portfolio" class="poppinss">Portfolio</a></li>
+        </ul>
+        <ul class="flex s-center w-80 font-awesome">
+            <a href="https://www.linkedin.com/in/sujal-kishore-kumar-talreja-65975b216/" target="_blank">
+                <li><i class="fa-brands fa-linkedin-in"></i></li>
+            </a>
+            <a href="https://github.com/webcoder904" target="_blank">
+                <li><i class="fa-brands fa-github"></i></li>
+            </a>
+            <a href="https://www.instagram.com/sujal.talreja.2004/" target="_blank">
+                <li><i class="fa-brands fa-instagram"></i></li>
+            </a>
+            <a href="mailto:sujaltalreja04@gmail.com" target="_blank">
+                <li><i class="fa-solid fa-envelope"></i></li>
+            </a>
+        </ul>
+        
+        
+        <p class="t-center my-2 poppins">&copy; All Rights Reserved - <span> Sujal kishore kumar talreja</span></p>
+
+    </footer>
+
+    <div id="scroll-top" onclick="scrolltop()">
+        <span><i class="fa-solid fa-arrow-up"></i></span>
+    </div>
+
+</body>
+<script src="/script.js"></script>
+
+</html>
